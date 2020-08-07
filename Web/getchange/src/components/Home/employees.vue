@@ -1,7 +1,11 @@
 <template>
     <div>
+   
     <gnav></gnav>
+       <sidebar></sidebar>
+  
     <div class='container-fluid'>
+    
     <div class='row'>
 
     <div class='col-md-2 col-lg-2' >
@@ -24,10 +28,11 @@ hhh
 
 <script>
 import gnav from '../Partials/navbar'
+import sidebar from '../Partials/sidebar'
 export default {
     name:'employees',
     components:{
-        gnav
+        gnav,sidebar
     }
 }
 </script>
