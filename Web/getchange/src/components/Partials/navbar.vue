@@ -1,7 +1,7 @@
 <template>
   <div>
     <header>
-      <section class="container-fluid">
+      <section class="c">
         <nav class="navbar navbar-expand-lg  navbar-light">
           <a class="navbar-brand" href="#">
             <img src="../../assets/Bitmap.png" alt="Logo" />

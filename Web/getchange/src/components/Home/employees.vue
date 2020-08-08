@@ -3,8 +3,8 @@
     <gnav></gnav>
     <sidebar></sidebar>
 
-    <div class="container">
-      <div class="row mt-5">
+    <div class="contain">
+      <div class="row">
         <div class="col-auto mr-auto header">
           <h5>Employees</h5>
         </div>
@@ -13,7 +13,7 @@
         </div>
       </div>
 
-      <div class="row mt-3 josh__bakery p-4">
+      <div class="row mt-4 josh__bakery p-3">
         <div class="col-auto mr-auto header">
           <h2>Josh Bakery Ventures</h2>
         </div>
@@ -46,14 +46,17 @@ export default {
 }
 </script>
 <style scoped>
+.contain{
+    padding:80px 150px
+}
 .header h5 {
   text-align: center;
   color: #013c61;
-  font-size: 26px;
+  font-size: 24px;
   font-family: 'Roboto', sans-serif;
 }
 .header h2 {
-  font-size: 36px;
+  font-size: 32px;
   font-weight: 500;
   font-family: 'Roboto', sans-serif;
 
@@ -64,6 +67,7 @@ export default {
   color: white;
   background-color: var(--main-bg-color);
   border: none;
+  font-size: 16px;
   padding: 10px 40px;
 }
 .add__btn :focus {
@@ -75,7 +79,7 @@ export default {
 }
 .address {
   font-weight: normal;
-  font-size: 22px;
+  font-size: 20px;
   letter-spacing: -0.55px;
   color: #013c61;
 

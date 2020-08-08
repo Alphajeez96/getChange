@@ -64,7 +64,7 @@ position: relative;
 display: table-cell;
 width: 60px;
 height: 36px;
-text-align: center;
+    padding-top: 50px;
 vertical-align: middle;
 font-size:20px;
 color:  #013C61;
@@ -99,7 +99,7 @@ margin:7px 0;
 .main-menu li {
 position:relative;
 display:block;
-width:250px;
+width:255px;
 }
 
 .main-menu li>a {
