@@ -4,7 +4,7 @@
     <div class="area"></div><nav class="main-menu">
             <ul>
                 <li>
-                    <a href="http://justinfarrow.com">
+                    <a href="#">
                         <i class="fa fa-home fa-2x"></i>
                         <span class="nav-text px-2">
                             Dashboard
@@ -16,7 +16,7 @@
                     <a href="#">
                         <i class="fa fa-laptop fa-2x"></i>
                         <span class="nav-text">
-                            Stars Components
+                            Employees
                         </span>
                     </a>
                     
@@ -30,31 +30,9 @@
                     </a>
                     
                 </li>
-                <li class="has-subnav">
-                    <a href="#">
-                       <i class="fa fa-folder-open fa-2x"></i>
-                        <span class="nav-text">
-                            Pages
-                        </span>
-                    </a>
-                   
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fa fa-bar-chart-o fa-2x"></i>
-                        <span class="nav-text">
-                            Graphs and Statistics
-                        </span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fa fa-font fa-2x"></i>
-                        <span class="nav-text">
-                           Quotes
-                        </span>
-                    </a>
-                </li>
+          
+            
+            
             
               
            
@@ -89,6 +67,7 @@ height: 36px;
 text-align: center;
 vertical-align: middle;
 font-size:20px;
+color:  #013C61;
 }
 
 

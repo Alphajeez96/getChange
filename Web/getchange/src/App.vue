@@ -9,6 +9,9 @@
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+:root {
+  --main-bg-color: #2BDA53;
+}
 #app {
 font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
