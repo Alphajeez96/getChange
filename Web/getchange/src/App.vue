@@ -8,12 +8,15 @@
 </template>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
 :root {
   --main-bg-color: #2BDA53;
+  --primary-color: #013C61;
+  --main-font:'Roboto', sans-serif;
 }
 #app {
-  font-family: 'Roboto', sans-serif;
+  font-family: var(--main-font);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; 
 background: #F6F8F8 ;
@@ -23,6 +26,7 @@ background: #F6F8F8 ;
 #nav {
  
 }
+
 
 .nav__holder {
 font-weight: 500;

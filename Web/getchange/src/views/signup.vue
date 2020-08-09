@@ -2,6 +2,7 @@
   <div class="home">
 <signup></signup>
 
+
   </div>
 </template>
 
