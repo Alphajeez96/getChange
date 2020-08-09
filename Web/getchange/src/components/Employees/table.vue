@@ -1,81 +1,48 @@
 <template>
 <div>
-   <div class="table-surround">
-        <div class="table">
-          <div class="table-head">
-            <div>
-              <div class="checkbox"></div>
-            </div>
-            <div>
-              <p>FIRST NAME</p>
-            </div>
-            <div>
-              <p>LAST NAME</p>
-            </div>
-            <div>
-              <p>EMAIL</p>
-            </div>
-            <div>
-              <p>PHONE</p>
-            </div>
-            <div>
-              <p>ROLE</p>
-            </div>
-            <div></div>
-          </div>
-          <div class="table-row" v-for="i in 10" :key="i">
-            <div>
-              <div class="checkbox"></div>
-            </div>
-            <div>
-              <p>Joshua</p>
-            </div>
-            <div>
-              <p>Bakare</p>
-            </div>
-            <div>
-              <p>jognbakery@gmail.com</p>
-            </div>
-            <div>
-              <p>+2348123444803</p>
-            </div>
-            <div>
-              <p>Staff</p>
-            </div>
-            <div>
-              <p>
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="21" viewBox="0 0 18 21" fill="none">
-                  <path
-                    d="M1 5.55555H2.77778H17"
-                    stroke="#6A7E8A"
-                    stroke-width="1.2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M3.9778 5.55555C3.9778 4.89281 3.44054 4.35555 2.7778 4.35555V5.55555H3.9778ZM3.9778 18V5.55555H2.7778V18H3.9778ZM4.55557 18.5778C4.23647 18.5778 3.9778 18.3191 3.9778 18H2.7778C2.7778 18.9818 3.57373 19.7778 4.55557 19.7778V18.5778ZM13.4445 18.5778H4.55557V19.7778H13.4445V18.5778ZM14.0222 18C14.0222 18.3191 13.7636 18.5778 13.4445 18.5778V19.7778C14.4263 19.7778 15.2222 18.9818 15.2222 18H14.0222ZM14.0222 5.55555V18H15.2222V5.55555H14.0222ZM15.2222 4.35555C14.5595 4.35555 14.0222 4.89281 14.0222 5.55555H15.2222H15.2222V4.35555ZM16.4222 5.55555C16.4222 4.89281 15.885 4.35555 15.2222 4.35555V5.55555H16.4222ZM16.4222 18V5.55555H15.2222V18H16.4222ZM13.4445 20.9778C15.089 20.9778 16.4222 19.6446 16.4222 18H15.2222C15.2222 18.9818 14.4263 19.7778 13.4445 19.7778V20.9778ZM4.55557 20.9778H13.4445V19.7778H4.55557V20.9778ZM1.5778 18C1.5778 19.6446 2.91099 20.9778 4.55557 20.9778V19.7778C3.57373 19.7778 2.7778 18.9818 2.7778 18H1.5778ZM1.5778 5.55555V18H2.7778V5.55555H1.5778ZM2.7778 4.35555C2.11505 4.35555 1.5778 4.89281 1.5778 5.55555H2.7778V4.35555ZM6.64446 3.77777C6.64446 3.45867 6.90314 3.19999 7.22224 3.19999V1.99999C6.2404 1.99999 5.44446 2.79593 5.44446 3.77777H6.64446ZM6.64446 5.55555V3.77777H5.44446V5.55555H6.64446ZM5.44446 6.75555C6.1072 6.75555 6.64446 6.21829 6.64446 5.55555H5.44446V6.75555ZM4.24446 5.55555C4.24446 6.21829 4.78172 6.75555 5.44446 6.75555V5.55555H4.24446ZM4.24446 3.77777V5.55555H5.44446V3.77777H4.24446ZM7.22224 0.799994C5.57766 0.799994 4.24446 2.13319 4.24446 3.77777H5.44446C5.44446 2.79593 6.2404 1.99999 7.22224 1.99999V0.799994ZM10.7778 0.799994H7.22224V1.99999H10.7778V0.799994ZM13.7556 3.77777C13.7556 2.13319 12.4224 0.799994 10.7778 0.799994V1.99999C11.7596 1.99999 12.5556 2.79593 12.5556 3.77777H13.7556ZM13.7556 5.55555V3.77777H12.5556V5.55555H13.7556ZM12.5556 6.75555C13.2183 6.75555 13.7556 6.21829 13.7556 5.55555H12.5556V6.75555ZM11.3556 5.55555C11.3556 6.21829 11.8928 6.75555 12.5556 6.75555V5.55555H11.3556ZM11.3556 3.77777V5.55555H12.5556V3.77777H11.3556ZM10.7778 3.19999C11.0969 3.19999 11.3556 3.45867 11.3556 3.77777H12.5556C12.5556 2.79593 11.7596 1.99999 10.7778 1.99999V3.19999ZM7.22224 3.19999H10.7778V1.99999H7.22224V3.19999Z"
-                    fill="#6A7E8A"
-                  />
-                  <path
-                    d="M7.22222 9.99999V15.3333"
-                    stroke="#6A7E8A"
-                    stroke-width="1.2"
-                    stroke-linecap="square"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M10.7778 9.99999V15.3333"
-                    stroke="#6A7E8A"
-                    stroke-width="1.2"
-                    stroke-linecap="square"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+<div class='contain'>
+   <table class="table table-responsive-md">
+  <thead  class="thead-dark">
+    <tr>
+      <th scope="col"> <input type="checkbox" aria-label="Checkbox for following text input"></th>
+      <th scope="col">FIRST NAME</th>
+      <th scope="col">LAST NAME</th>
+      <th scope="col">EMAIL</th>
+          <th scope="col">  PHONE</th>
+              <th scope="col">ROLE</th>
+                  <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row"> <input type="checkbox" aria-label="Checkbox for following text input"></th>
+      <td>Joshua</td>
+      <td>Bakare</td>
+      <td>@josh.bakery@gmail.com</td>
+        <td>+2348012345678 </td>
+        <td>Admin </td>
+        <td><svg xmlns="http://www.w3.org/2000/svg" width="18" height="21" viewBox="0 0 18 21" fill="none">
+<path d="M1 5.55558H2.77778H17" stroke="#6A7E8A" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M3.9778 5.55558C3.9778 4.89284 3.44054 4.35558 2.7778 4.35558V5.55558H3.9778ZM3.9778 18V5.55558H2.7778V18H3.9778ZM4.55557 18.5778C4.23647 18.5778 3.9778 18.3191 3.9778 18H2.7778C2.7778 18.9819 3.57373 19.7778 4.55557 19.7778V18.5778ZM13.4445 18.5778H4.55557V19.7778H13.4445V18.5778ZM14.0222 18C14.0222 18.3191 13.7636 18.5778 13.4445 18.5778V19.7778C14.4263 19.7778 15.2222 18.9819 15.2222 18H14.0222ZM14.0222 5.55558V18H15.2222V5.55558H14.0222ZM15.2222 4.35558C14.5595 4.35558 14.0222 4.89284 14.0222 5.55558H15.2222H15.2222V4.35558ZM16.4222 5.55558C16.4222 4.89284 15.885 4.35558 15.2222 4.35558V5.55558H16.4222ZM16.4222 18V5.55558H15.2222V18H16.4222ZM13.4445 20.9778C15.089 20.9778 16.4222 19.6446 16.4222 18H15.2222C15.2222 18.9819 14.4263 19.7778 13.4445 19.7778V20.9778ZM4.55557 20.9778H13.4445V19.7778H4.55557V20.9778ZM1.5778 18C1.5778 19.6446 2.91099 20.9778 4.55557 20.9778V19.7778C3.57373 19.7778 2.7778 18.9819 2.7778 18H1.5778ZM1.5778 5.55558V18H2.7778V5.55558H1.5778ZM2.7778 4.35558C2.11505 4.35558 1.5778 4.89284 1.5778 5.55558H2.7778V4.35558ZM6.64446 3.7778C6.64446 3.4587 6.90314 3.20002 7.22224 3.20002V2.00002C6.2404 2.00002 5.44446 2.79596 5.44446 3.7778H6.64446ZM6.64446 5.55558V3.7778H5.44446V5.55558H6.64446ZM5.44446 6.75558C6.1072 6.75558 6.64446 6.21832 6.64446 5.55558H5.44446V6.75558ZM4.24446 5.55558C4.24446 6.21832 4.78172 6.75558 5.44446 6.75558V5.55558H4.24446ZM4.24446 3.7778V5.55558H5.44446V3.7778H4.24446ZM7.22224 0.800024C5.57766 0.800024 4.24446 2.13322 4.24446 3.7778H5.44446C5.44446 2.79596 6.2404 2.00002 7.22224 2.00002V0.800024ZM10.7778 0.800024H7.22224V2.00002H10.7778V0.800024ZM13.7556 3.7778C13.7556 2.13322 12.4224 0.800024 10.7778 0.800024V2.00002C11.7596 2.00002 12.5556 2.79596 12.5556 3.7778H13.7556ZM13.7556 5.55558V3.7778H12.5556V5.55558H13.7556ZM12.5556 6.75558C13.2183 6.75558 13.7556 6.21832 13.7556 5.55558H12.5556V6.75558ZM11.3556 5.55558C11.3556 6.21832 11.8928 6.75558 12.5556 6.75558V5.55558H11.3556ZM11.3556 3.7778V5.55558H12.5556V3.7778H11.3556ZM10.7778 3.20002C11.0969 3.20002 11.3556 3.4587 11.3556 3.7778H12.5556C12.5556 2.79596 11.7596 2.00002 10.7778 2.00002V3.20002ZM7.22224 3.20002H10.7778V2.00002H7.22224V3.20002Z" fill="#6A7E8A"/>
+<path d="M7.22222 10V15.3334" stroke="#6A7E8A" stroke-width="1.2" stroke-linecap="square" stroke-linejoin="round"/>
+<path d="M10.7778 10V15.3334" stroke="#6A7E8A" stroke-width="1.2" stroke-linecap="square" stroke-linejoin="round"/>
+</svg> </td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Larry</td>
+      <td>the Bird</td>
+      <td>@twitter</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 </div>
 </template>
 
@@ -112,90 +79,11 @@ export default {
 };
 </script>
 <style scoped>
-.main {
-  background-color: #f6f8f8;
-  height: 100%;
+@import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+
+.contain{
+    padding:0px 150px
 }
-.container {
-  width: 90%;
-  margin: auto;
-}
-.employee {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  /* padding: 1rem; */
-  width: 100%;
-}
-.name {
-  color: var(--primary-color);
-}
-.add {
-  background-color: var(--green);
-  color: white;
-  padding: 0.5rem 2rem;
-  border-radius: 3px;
-  border: none;
-}
-.details {
-  background-color: white;
-  border-radius: 5px;
-  padding: 2rem 1rem;
-}
-.table-row,
-.table-head {
-  display: grid;
-  grid-template-columns: repeat(7, 14.28%);
-  margin-top: 1em;
-  align-items: center;
-  /* justify-items: center; */
-}
-.table {
-  overflow-x: auto;
-}
-.checkbox {
-  border-radius: 5px;
-  height: 1rem;
-  width: 1rem;
-  background-color: white;
-  border: 1px solid rgba(106, 126, 138, 0.4);
-  margin: auto;
-}
-.table-row {
-  background-color: white;
-  border-radius: 5px;
-  margin: 1rem 0;
-}
-.table-head div > p,
-.table-row div > p {
-  color: var(--primary-color);
-}
-@media only screen and (max-width: 768px) {
-  .table-row,
-  .table-head {
-    grid-template-columns: repeat(7, auto);
-    grid-template-rows: 100%;
-    /* overflow-y: auto; */
-    grid-column-gap: 0.5rem;
-    padding: 0 0.5rem;
-  }
-  /* .table-row {
-    width: auto;
-  } */
-  .details {
-    padding: 0rem 0.5rem;
-  }
-  .table {
-    width: 40rem;
-  }
-  .container {
-    overflow-y: auto;
-  }
-  .table-surround {
-    overflow-y: auto;
-  }
-  .table-head div > p {
-    font-size: 1rem;
-  }
-}
+
+
 </style>
