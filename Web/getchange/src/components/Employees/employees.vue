@@ -1,8 +1,5 @@
 <template>
   <div>
-    <gnav></gnav>
-    <sidebar></sidebar>
-
     <div class="contain">
       <div class="row">
         <div class="col-auto mr-auto header">
@@ -26,14 +23,10 @@
 </template>
 
 <script>
-import gnav from '../Partials/navbar'
-import sidebar from '../Partials/sidebar'
+
 export default {
   name: 'employees',
-  components: {
-    gnav,
-    sidebar,
-  },
+
 }
 </script>
 <style scoped>

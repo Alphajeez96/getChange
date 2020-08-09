@@ -20,7 +20,7 @@
         </thead>
         
         <tbody >
-          <tr v-for="i in 6" :key="i">
+          <tr v-for="i in 5" :key="i">
             <td scope="row">
               <input
                 type="checkbox"
