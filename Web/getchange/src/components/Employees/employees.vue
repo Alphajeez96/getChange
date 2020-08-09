@@ -13,16 +13,14 @@
         </div>
       </div>
 
-      <div class="row mt-4 josh__bakery p-3">
-        <div class="col-auto mr-auto header">
+      <div class="row p-3 mt-4 josh__bakery">
+        <div class="col-auto mr-auto header pt-2">
           <h2>Josh Bakery Ventures</h2>
         </div>
         <div class="col-auto">
-          <p class="address">62, Bode Thomas, Surulere, Lagos</p>
+          <p class="address pt-3">62, Bode Thomas, Surulere, Lagos</p>
         </div>
       </div>
-
-    
     </div>
   </div>
 </template>
@@ -40,18 +38,21 @@ export default {
 </script>
 <style scoped>
 .contain{
-    padding:80px 150px
+    padding:80px 150px 0px 150px;
 }
 .header h5 {
   text-align: center;
-  color: #013c61;
-  font-size: 24px;
-  font-family: 'Roboto', sans-serif;
+  color: var(--primary-color);
+ 
+  font-family: var(--main-font);
+   font-size: 22px;
 }
 .header h2 {
-  font-size: 32px;
+  font-size: 30px;
   font-weight: 500;
-  font-family: 'Roboto', sans-serif;
+color: var(--primary-color);
+ 
+  font-family: var(--main-font);
 
   letter-spacing: -0.9px;
 }
@@ -61,20 +62,21 @@ export default {
   background-color: var(--main-bg-color);
   border: none;
   font-size: 16px;
-  padding: 10px 40px;
+  padding: 7px 30px;
 }
 .add__btn :focus {
   outline: none;
 }
 .josh__bakery {
   background: white;
+
   border-radius: 5px;
 }
 .address {
-  font-weight: normal;
-  font-size: 20px;
+  font-weight: 500;
+  font-size: 16px;
   letter-spacing: -0.55px;
-  color: #013c61;
+  color: var(--primary-color);
 
 }
 </style>
