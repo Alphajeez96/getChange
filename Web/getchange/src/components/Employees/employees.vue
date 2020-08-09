@@ -22,14 +22,7 @@
         </div>
       </div>
 
-      <div class="row mt-5">
-        <div class="col-auto mr-auto header">
-          <h5>Employees</h5>
-        </div>
-        <div class="col-auto">
-          <button class="add__btn">Add New</button>
-        </div>
-      </div>
+    
     </div>
   </div>
 </template>
