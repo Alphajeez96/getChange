@@ -23,18 +23,14 @@
  <form>
       <div class="login-form">
         <div class="form">
-          <h2>Create your free account</h2>
-          <p>
-            Already registered?
-            <span><a href="/">Sign in</a></span>
-          </p>
+         
           <div class="form-card">
             <div class="names">
               <div class="form-gap lastname">
                 <label for="firstName">First Name</label>
                 <br />
                 <div class="form-field">
-                  <input type="text" placeholder="Joshua" name id="firstName" />
+                  <input type="text" v-model="employee.firstname" placeholder="Joshua" name id="firstName" />
               
                 </div>
                 <hr />
@@ -43,7 +39,7 @@
                 <label for="lastName">Last Name</label>
                 <br />
                 <div class="form-field">
-                  <input type="text" placeholder="Bakare" name id="lastName" />
+                  <input type="text"  v-model="employee.lastname" placeholder="Bakare" name id="lastName" />
               
                 </div>
                 <hr />
@@ -58,39 +54,17 @@
                   placeholder="Josh.bakery@gmail.com"
                   name
                   id="mail"
+                   v-model="employee.email"
                 />
                
               </div>
               <hr />
             </div>
-            <div class="password">
-              <label for="email">Password</label>
-              <br />
-              <div class="form-field">
-                <input
-                  type="password"
-                  placeholder="*********"
-                  name
-                  id="password"
-                />
-             
-              </div>
-              <hr />
-            </div>
-            <div class="button">
-              <input class="submit" type="button" value="Continue" />
-            </div>
+         
+          
           </div>
         </div>
-        <div class="footer">
-          <p>
-            By signing up, you agree to our
-            <span><a href="#">Terms</a></span>
-            and
-            <span><a href="#">Privacy Policy</a></span>
-          </p>
-          <p>© 2019 Tinylabs. All rights reserved</p>
-        </div>
+       
       </div>
       </form>
       </div>
@@ -123,6 +97,11 @@ export default {
   data(){
     return{
       employee:{
+firstname: '',
+lastname: '',
+email: '',
+phone: '',
+role: ''
 
       }
     }
@@ -132,7 +111,7 @@ export default {
    async addEmployee(){
      try{
        let response = await this.$http.post(
-         'https://crudcrud.com/api/3058e6a8a96443e3991b50d1bca9028a'
+         'https://crudcrud.com/api/3058e6a8a96443e3991b50d1bca9028a', this.employee
        )
        console.log(response)
      }
@@ -186,6 +165,86 @@ export default {
   font-size: 16px;
   letter-spacing: -0.55px;
   color: var(--primary-color);
+}
+.form h2 {
+  color: var(--primary-color);
+  letter-spacing: 0.4px;
+  font-size: 30px;
+  font-family: var(--main-font);
+  font-weight: 500;
+}
+.form p {
+  color: var(--primary-color);
+  font-size: 16px;
+  font-family: var(--main-font);
+  font-weight: 400;
+}
+
+h2 {
+  color: var(--primary-color);
+}
+span a {
+  color: var(--green);
+  font-family: var(--main-font);
+  font-weight: 500;
+  text-decoration: none;
+}
+label {
+  color: #6a7e8a;
+}
+::placeholder {
+  color: var(--primary-color);
+  font-size: 18px;
+  font-family: var(--main-font);
+  font-weight: 500;
+}
+.login {
+  display: flex;
+}
+.login-image {
+  width: 45%;
+
+  min-height: 100vh;
+  background-image: url('../../assets/Model.png');
+  background-size: cover;
+}
+.login-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  color: black;
+  width: 55%;
+  position: relative;
+}
+img {
+  height: 100%;
+  width: 100%;
+}
+
+input {
+  border: none;
+  outline: none;
+  padding: 0.5rem;
+  width: 100%;
+}
+.form-field {
+  display: flex;
+  justify-content: space-between;
+}
+.names {
+  display: flex;
+}
+.form-gap {
+  margin: 0 1rem;
+}
+hr {
+  border: 0.02rem solid #d8d8d8;
+  margin: 0;
+}
+.password,
+.email {
+  margin: 2rem 1rem;
 }
 
 
