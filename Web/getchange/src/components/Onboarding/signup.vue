@@ -2,15 +2,15 @@
   <div>
     <div class="login">
       <div class="login-image">
-        <!-- <h1>Image</h1> -->
         <img src="../../assets/Model.png" alt />
       </div>
+      <form>
       <div class="login-form">
         <div class="form">
           <h2>Create your free account</h2>
           <p>
             Already registered?
-            <a href="#">Sign in</a>
+            <span><a href="/">Sign in</a></span>
           </p>
           <div class="form-card">
             <div class="names">
@@ -18,7 +18,7 @@
                 <label for="firstName">First Name</label>
                 <br />
                 <div class="form-field">
-                  <input type="text" name id="firstName" />
+                  <input type="text" placeholder="Joshua" name id="firstName" />
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"
@@ -50,7 +50,7 @@
                 <label for="lastName">Last Name</label>
                 <br />
                 <div class="form-field">
-                  <input type="text" name id="lastName" />
+                  <input type="text" placeholder="Bakare" name id="lastName" />
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"
@@ -83,7 +83,12 @@
               <label for="email">Email</label>
               <br />
               <div class="form-field">
-                <input type="email" name id="mail" />
+                <input
+                  type="email"
+                  placeholder="Josh.bakery@gmail.com"
+                  name
+                  id="mail"
+                />
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="17"
@@ -115,7 +120,12 @@
               <label for="email">Password</label>
               <br />
               <div class="form-field">
-                <input type="password" name id="password" />
+                <input
+                  type="password"
+                  placeholder="*********"
+                  name
+                  id="password"
+                />
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="19"
@@ -153,12 +163,14 @@
         <div class="footer">
           <p>
             By signing up, you agree to our
-            <a href="#">Terms</a> and
-            <a href="#">Privacy Policy</a>
+            <span><a href="#">Terms</a></span>
+            and
+            <span><a href="#">Privacy Policy</a></span>
           </p>
           <p>© 2019 Tinylabs. All rights reserved</p>
         </div>
       </div>
+      </form>
     </div>
   </div>
 </template>
@@ -166,37 +178,56 @@
 export default {
   data() {
     return {
-      name: "signup",
-    };
+      name: 'signup',
+    }
   },
-};
+}
 </script>
 <style scoped>
-
 body {
   padding: 0;
   margin: 0;
 }
-p,
-h2 {
+.form h2 {
+  color: var(--primary-color);
+  letter-spacing: 0.4px;
+  font-size: 30px;
+  font-family: var(--main-font);
+  font-weight: 500;
+}
+.form p {
+  color: var(--primary-color);
+  font-size: 16px;
+  font-family: var(--main-font);
+  font-weight: 400;
+}
 
+h2 {
   color: var(--primary-color);
 }
-a {
+span a {
   color: var(--green);
+  font-family: var(--main-font);
+  font-weight: 500;
+  text-decoration: none;
 }
 label {
-  color: (var(--font-color));
+  color: #6a7e8a;
+}
+::placeholder {
+  color: var(--primary-color);
+  font-size: 18px;
+  font-family: var(--main-font);
+  font-weight: 500;
 }
 .login {
   display: flex;
-
 }
 .login-image {
   width: 45%;
 
   min-height: 100vh;
-  background-image: url("../../assets/Model.png");
+  background-image: url('../../assets/Model.png');
   background-size: cover;
 }
 .login-form {
@@ -262,6 +293,14 @@ hr {
   justify-content: space-evenly;
   width: 100%;
 }
+
+.footer p {
+  font-weight: normal;
+  font-size: 13px;
+  letter-spacing: -0.08px;
+  color: #6a7e8a;
+}
+
 @media only screen and (max-width: 768px) {
   .login-image {
     display: none;
@@ -273,7 +312,6 @@ hr {
   }
   .form-card {
     padding: 1rem;
-  
   }
   .submit {
     width: 100%;

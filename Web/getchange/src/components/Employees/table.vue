@@ -18,8 +18,8 @@
             <th scope="col"></th>
           </tr>
         </thead>
-        
-        <tbody >
+
+        <tbody>
           <tr v-for="i in 5" :key="i">
             <td scope="row">
               <input
@@ -74,6 +74,20 @@
   </div>
 </template>
 
+<script>
+
+export default {
+  name: 'table',
+  data(){
+    return{
+
+    }
+  },
+
+
+}
+</script>
+
 <style scoped>
 .contain {
   padding: 0px 150px;
@@ -95,21 +109,19 @@ tbody tr td {
   letter-spacing: -0.0914285px;
   color: #6a7e8a;
   font-size: 14px;
-
 }
 .table td,
 .table th {
   border: none;
-
 }
-svg{
-    cursor:pointer
+svg {
+  cursor: pointer;
 }
 table {
   border-spacing: 10px;
 }
-   table {
-        border-collapse: separate;
-        border-spacing: 0px 15px;
-      }
+table {
+  border-collapse: separate;
+  border-spacing: 0px 15px;
+}
 </style>
